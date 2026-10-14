@@ -64,3 +64,10 @@ body {
     padding: 20px;
     margin: 20px 0;
 }
+
+
+#ia-image {
+    max-height: 300px;
+    width: auto;
+    border-radius: 10px;
+}
