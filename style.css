@@ -15,6 +15,18 @@ body {
     color: #c9c9c9;
     font-size: 1em;
 }
+.margin15 {
+    margin: 15px;
+}
+.padding15 {
+    padding: 15px;
+}
+.center {
+    text-align: center;
+}
+.margin5pc {
+    margin: 5%;
+}
 
 /* Polices personnalisées */
 .oswald {
@@ -43,4 +55,12 @@ body {
 .blue-button:hover {
     background-color: #53abfd;
     color: #1d1d1d;
+}
+
+/* Boxes */
+.box {
+    background-color: #434343;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
 }
