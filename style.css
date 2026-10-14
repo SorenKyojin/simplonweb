@@ -7,6 +7,14 @@ html{
     color: #ffffff;
     font-size: 2em;
 }
+.title2 {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+body {
+    color: #c9c9c9;
+    font-size: 1em;
+}
 
 /* Polices personnalisées */
 .oswald {
@@ -14,4 +22,25 @@ html{
 }
 .nunito {
     font-family: 'Nunito', sans-serif;
+}
+
+/* BUTTONS */
+.blue-button {
+    background-color: #0f72d4;
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.30s;
+}
+.blue-button:hover {
+    background-color: #53abfd;
+    color: #1d1d1d;
 }
