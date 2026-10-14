@@ -1,5 +1,17 @@
 /*COMMON */
+html{
+    background-color: #222222;
+}
+
 .title {
-    color: #333;
+    color: #ffffff;
     font-size: 2em;
+}
+
+/* Polices personnalisées */
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+.nunito {
+    font-family: 'Nunito', sans-serif;
 }
