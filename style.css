@@ -27,6 +27,9 @@ body {
 .margin5pc {
     margin: 5%;
 }
+.max-w-50pc {
+    max-width: 50%;
+}
 
 /* Polices personnalisées */
 .oswald {
@@ -34,6 +37,15 @@ body {
 }
 .nunito {
     font-family: 'Nunito', sans-serif;
+}
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-button {
+    text-decoration: none;
+    margin: 10px 20px;
 }
 
 /* BUTTONS */
@@ -56,6 +68,25 @@ body {
     background-color: #53abfd;
     color: #1d1d1d;
 }
+.green-button {
+    background-color: #28a745;
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.30s;
+}
+.green-button:hover {
+    background-color: #64f985;
+    color: #1d1d1d;
+}
 
 /* Boxes */
 .box {
@@ -66,8 +97,60 @@ body {
 }
 
 
-#ia-image {
-    max-height: 300px;
+.blue-button {
+    max-height: 50%;
     width: auto;
     border-radius: 10px;
 }
+
+/* Flexbox */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.flex{
+    display: flex;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+
+#title-ia-image {
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ia-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
