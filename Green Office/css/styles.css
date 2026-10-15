@@ -1,0 +1,25 @@
+.green-bg{
+    background-color: #b8cb00;
+}
+.flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.list-style-none{
+    list-style: none;
+}
