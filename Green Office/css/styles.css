@@ -1,5 +1,23 @@
+html{
+    background-image: url('../img/fond.png');
+    /*Repeating background*/
+    background-repeat: repeat;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
 .green-bg{
     background-color: #b8cb00;
+}
+body{
+    background-color: #fff;
+    max-width: 750px;
+    padding: 0;
+    margin: 0 auto;
+}
+main{
+    padding: 20px;
 }
 .flex{
     display: flex;
@@ -20,6 +38,25 @@
 .justify-between{
     justify-content: space-between;
 }
-.list-style-none{
+.nav{
     list-style: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+.nav-link{
+    color: #3b4602;
+    padding: 0 20px;
+    transition-duration: 0.3s;
+    text-decoration: underline;
+    text-decoration-color: #3b4602;
+    text-decoration-thickness: 1px;
+}
+.nav-link:hover{
+    color: #677b07;
+    text-decoration-color: #677b07;
+}
+.oswald{
+    font-family: 'Oswald', sans-serif;
 }
