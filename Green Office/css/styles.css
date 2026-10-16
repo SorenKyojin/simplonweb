@@ -1,3 +1,10 @@
+/*
+ * Partie commune *
+
+? Toutes les balises HTML utiliseront ce style par défaut.
+
+*/
+
 html{
     background-image: url('../img/fond.png');
     background-repeat: repeat;
@@ -22,6 +29,15 @@ body{
 main{
     padding: 20px;
 }
+ul{
+    width: auto;
+}
+/*
+ * Flexbox *
+
+? Raccourcis pour les classes flexbox, afin de faciliter la mise en page des éléments.
+
+*/
 .flex{
     display: flex;
 }
@@ -41,6 +57,13 @@ main{
 .justify-between{
     justify-content: space-between;
 }
+
+/*
+ * Classes personnalisées *
+
+? Les éléments HTML peuvent utiliser ces classes pour appliquer des styles plus spécifiques.
+
+*/
 .nav{
     list-style: none;
     font-family: 'Oswald', sans-serif;
@@ -90,7 +113,4 @@ main{
 }
 .green-btn:hover{
     background-color: #677b07;
-}
-ul{
-    width: auto;
 }
