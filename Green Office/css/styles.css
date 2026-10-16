@@ -7,6 +7,9 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
+main h2{
+    color: #b9ca23;
+}
 .green-bg{
     background-color: #b8cb00;
 }
@@ -59,4 +62,13 @@ main{
 }
 .oswald{
     font-family: 'Oswald', sans-serif;
+}
+
+.green-btn{
+    background-color: #b8cb00;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    transition-duration: 0.3s;
 }
