@@ -1,7 +1,7 @@
 html{
     background-image: url('../img/fond.png');
-    /*Repeating background*/
     background-repeat: repeat;
+    font-family: 'Roboto', sans-serif;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Oswald', sans-serif;
@@ -74,6 +74,10 @@ main{
     width: 100%;
     height: auto;
 }
+.hero article ul{
+    grid-column: 1 / -1;
+    width: 100%;
+}
 .green-btn{
     background-color: #b8cb00;
     color: #fff;
@@ -83,4 +87,7 @@ main{
     transition-duration: 0.3s;
     grid-column: 1 / -1;
     justify-self: end;
+}
+ul{
+    width: auto;
 }
