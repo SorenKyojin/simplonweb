@@ -18,3 +18,18 @@ main{
     margin: 0 auto;
     text-align: center;
 }
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    color: white;
+    margin: 32px;
+}
+
+.slabo{
+    font-family: 'Slabo 27px', serif;
+}
