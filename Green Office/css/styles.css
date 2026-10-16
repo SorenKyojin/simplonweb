@@ -88,6 +88,9 @@ main{
     grid-column: 1 / -1;
     justify-self: end;
 }
+.green-btn:hover{
+    background-color: #677b07;
+}
 ul{
     width: auto;
 }
