@@ -18,16 +18,28 @@ main{
     margin: 0 auto;
     text-align: center;
 }
-nav a{
-    color: white;
-    margin: 32px;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+nav{
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+nav a{
+    color: white;
+    margin: 8px;
+    list-style-type: none;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Slabo 27px', serif;
 }
 
 .slabo{
     font-family: 'Slabo 27px', serif;
 }
+nav a:hover{
+    color: #a2d7db;
+}
+
