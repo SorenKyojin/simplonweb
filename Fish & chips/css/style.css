@@ -43,3 +43,13 @@ nav a:hover{
     color: #a2d7db;
 }
 
+.text-center{
+    text-align: center;
+}
+
+.special{
+    background-color: #badedd;
+    text-align: center;
+    /* center everything and take up full width */
+    width: 100%;
+}
