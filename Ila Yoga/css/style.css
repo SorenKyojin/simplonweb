@@ -1,0 +1,15 @@
+header{
+    text-align: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.581);
+    width: 100%;
+}
+.upper-section{
+    background-image: url("../img/fond.jpg");
+    background-size: cover ;
+    height: 400px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
