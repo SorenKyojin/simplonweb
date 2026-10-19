@@ -3,6 +3,7 @@ html{
     background-repeat: repeat;
 }
 
+
 .header{
     background-color: #25b3b4;
     text-align: center;
@@ -11,12 +12,11 @@ html{
     border-top: 4px solid #409ba1;
     border-bottom: 4px solid #409ba1;
 }
-main{
+body > :not(header){
     max-width: 1100px;
     min-width: 800px;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 nav{
     display: flex;
@@ -34,6 +34,7 @@ nav a{
     justify-content: center;
     text-decoration: none;
     font-family: 'Slabo 27px', serif;
+    transition-duration: 0.3s;
 }
 
 .slabo{
@@ -52,4 +53,18 @@ nav a:hover{
     text-align: center;
     /* center everything and take up full width */
     width: 100%;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.width70pc{
+    width: 70% ;
+}
+.width30pc{
+    width: 30% ;
 }
