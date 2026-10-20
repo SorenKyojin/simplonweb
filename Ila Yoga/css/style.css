@@ -1,15 +1,133 @@
-header{
-    text-align: center;
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.581);
-    width: 100%;
+body {
+    margin: 0;
 }
-.upper-section{
-    background-image: url("../img/fond.jpg");
-    background-size: cover ;
-    height: 400px;
+
+header {
+    background-image: url(../img/fond.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px 0 245px;
 }
+
 nav {
+    text-align: center;
     display: flex;
     justify-content: center;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    padding: 0 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+nav a:hover {
+
+    color: grey;
+
+}
+
+.fa-solid {
+    display: block;
+    text-align: center;
+    margin: auto; 
+}
+
+.offre{
+    background-color: rgba(199, 171, 229, 0.4);
+    padding: 2px;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.offre span {
+    text-transform: uppercase;
+}
+
+h1 {
+    text-align: center;
+    padding: 27px;
+    color: aliceblue;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+    text-shadow:  2px 2px rgb(12 11 12 / 56%)
+
+}
+
+section {
+    padding: 45px;
+}
+
+.description, .posture {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.description p {
+
+    flex: 7;
+    margin-left: 15px;
+
+}
+
+.posture {
+
+    flex-direction: row-reverse;
+
+}
+
+.posture p {
+
+    flex: 7;
+    margin-right: 10px;
+
+}
+
+.presentation {
+
+    background-color: rgb(176, 117, 204);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 55px;
+    color: aliceblue;
+
+}
+
+.presentation img {
+
+    width: 150px;
+
+}
+
+iframe {
+
+    width: 100%;
+
+}
+
+footer {
+
+    background-color: rgb(176, 117, 204);
+    padding: 30px 10px;
+
+}
+
+.description, .posture {
+
+    color: rgb(151, 149, 149);
 }
