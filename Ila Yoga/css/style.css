@@ -131,3 +131,18 @@ footer {
 
     color: rgb(151, 149, 149);
 }
+
+@media(max-width: 720px) {
+    .presentation {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        display: flex;
+        margin: 4px;
+    }
+}
