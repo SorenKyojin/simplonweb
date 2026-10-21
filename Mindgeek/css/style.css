@@ -142,9 +142,9 @@ h3,
     min-height: 44px;
     margin: 0 0 24px;
     padding: 12px 10px 8px;
-    border-top: 1px dotted #9da6a8;
-    border-right: 1px dotted #9da6a8;
-    border-left: 1px dotted #9da6a8;
+    border-top: 1px dotted var(--navy);
+    border-right: 1px dotted var(--navy);
+    border-left: 1px dotted var(--navy);
     color: var(--navy);
     font-size: 1.8em;
     line-height: 1.25;
