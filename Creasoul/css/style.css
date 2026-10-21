@@ -1,64 +1,93 @@
-html{
-    background-color: #f2f1f4;
-    padding: 0 10% 0 10%;
-}
-header > :not(nav){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.logo{
-    max-width: max-content;
+:root {
+  --couleur: #27ac97;
 }
 
-.pt-sans {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-weight: 100;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f1f4;
+  font-size: 1.6rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 250px;
+  color: rgb(107, 103, 103);
 }
 
-.open-sans {
-    font-family: "Open Sans", sans-serif;
+a {
+  text-decoration: none;
 }
 
-p {
-    font-size: 1.6rem;
+img {
+  max-width: 100%;
 }
-h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    color: #2fa893;
+
+header {
+  text-align: center;
 }
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: var(--couleur);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 40px;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.598);
+  transition: all 0.2 ease 0s;
+}
+
+h1,
 h2 {
-    font-size: 2.4rem;
-    text-transform: uppercase;
-    color: #2fa893;
+  color: var(--couleur);
+  border-bottom: 1px solid var(--couleur);
+  padding-bottom: 10px;
+  text-transform: uppercase;
 }
-h3 {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #2fa893;
+
+h1 {
+  font-size: 4rem;
 }
-nav{
-    background-color: #30a894;
-    padding: 20px;
-    display: flex;
+
+h2 {
+  font-size: 2.4rem;
+}
+
+section a {
+  color: var(--couleur);
+}
+
+aside {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  aside {
+    display: block;
+    background-color: #b8dcb1;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
     flex-direction: row;
     justify-content: space-around;
-}
-.nav-link{
-    text-decoration: none;
-    color: white;
-}
-main{
+  }
+
+  main {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-aside{
-    background-color: #b8dcb1;
-    padding: 20px;
-    margin-left: 20px;
-}
-hr{
-    color: #47a894;
+    gap: 20px;
+  }
 }

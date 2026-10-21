@@ -1,0 +1,64 @@
+html{
+    background-color: #f2f1f4;
+    padding: 0 10% 0 10%;
+}
+header > :not(nav){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    max-width: max-content;
+}
+
+.pt-sans {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 100;
+}
+
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+}
+
+p {
+    font-size: 1.6rem;
+}
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #2fa893;
+}
+h2 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #2fa893;
+}
+h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #2fa893;
+}
+nav{
+    background-color: #30a894;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+aside{
+    background-color: #b8dcb1;
+    padding: 20px;
+    margin-left: 20px;
+}
+hr{
+    color: #47a894;
+}
