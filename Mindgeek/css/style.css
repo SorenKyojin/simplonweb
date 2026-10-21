@@ -272,6 +272,73 @@ h3,
     color: #203f4d;
 }
 
+.contact-section {
+    margin-bottom: 30px;
+}
+
+.contact-section h1 {
+    min-height: 50px;
+    margin: 0 0 26px;
+    padding: 14px 10px 8px;
+    border-top: 1px dotted var(--navy);
+    border-right: 1px dotted var(--navy);
+    border-left: 1px dotted var(--navy);
+    color: var(--navy);
+    font-family: "Candal", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.contact-grid {
+    display: flex;
+    width: 96%;
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 26px;
+}
+
+.contact-item {
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: center;
+}
+
+.contact-icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto 8px;
+    fill: var(--pink);
+}
+
+.contact-item p,
+.contact-item address {
+    min-height: 32px;
+    margin: 0;
+    padding-top: 6px;
+    border-top: 1px dotted #c9c9c9;
+    color: var(--body-text);
+    font-size: 0.55rem;
+    font-style: normal;
+    line-height: 1.45;
+}
+
+.contact-item p a {
+    color: var(--pink);
+}
+
+.contact-map-section,
+#contact-map {
+    width: 100%;
+}
+
+#contact-map {
+    height: 240px;
+    z-index: 0;
+}
+
 @media (min-width: 1000px) {
     .site-header,
     .navigation {
@@ -359,6 +426,38 @@ h3,
     .footer-navigation {
         font-size: 0.9rem;
     }
+
+    .contact-section {
+        margin-bottom: 55px;
+    }
+
+    .contact-section h1 {
+        min-height: 60px;
+        margin-bottom: 36px;
+        padding-top: 18px;
+        font-size: 1.4rem;
+    }
+
+    .contact-grid {
+        gap: 52px;
+    }
+
+    .contact-icon {
+        width: 36px;
+        height: 36px;
+        margin-bottom: 12px;
+    }
+
+    .contact-item p,
+    .contact-item address {
+        min-height: 42px;
+        padding-top: 8px;
+        font-size: 0.75rem;
+    }
+
+    #contact-map {
+        height: 320px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -402,5 +501,14 @@ h3,
         flex-wrap: wrap;
         justify-content: center;
         gap: 18px 24px;
+    }
+
+    .contact-grid {
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .contact-item {
+        width: 100%;
     }
 }

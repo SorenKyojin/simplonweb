@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Mindgeek par e-mail, téléphone ou rendez-vous à Paris.">
+    <title>Contact — Mindgeek</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Navigation principale">
+            <a class="brand" href="../exercices.html" aria-label="Mindgeek, accueil">
+                <img src="img/logo.png" alt="Mindgeek">
+            </a>
+            <a class="navigation-link" href="mutualise.html">
+                <svg aria-hidden="true"><use href="#icon-users"></use></svg>
+                <span>Serveur Mutualisé</span>
+            </a>
+            <a class="navigation-link" href="dedie.html">
+                <svg aria-hidden="true"><use href="#icon-user"></use></svg>
+                <span>Serveur Dédié</span>
+            </a>
+            <a class="navigation-link" href="cloud.html">
+                <svg aria-hidden="true"><use href="#icon-cloud"></use></svg>
+                <span>Solution "Cloud"</span>
+            </a>
+            <a class="navigation-link" href="contact.html" aria-current="page">
+                <svg aria-hidden="true"><use href="#icon-envelope"></use></svg>
+                <span>Contact</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-banner">
+            <p class="content-width">QUE RECHERCHEZ-VOUS ?</p>
+        </div>
+        <div class="content-width main-content">
+            <section class="content-section contact-section" aria-labelledby="contact-title">
+                <h1 id="contact-title">Contactez-nous</h1>
+                <div class="contact-grid">
+                    <article class="contact-item">
+                        <svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24">
+                            <path d="M22 2 15 22l-4-8-8-4 19-8ZM11 14l5 5 3-12-8 7Z"/>
+                        </svg>
+                        <p><span>Mail :</span> <a href="mailto:mindgeek@mindgeek.fr">mindgeek@mindgeek.fr</a></p>
+                    </article>
+                    <article class="contact-item">
+                        <svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24">
+                            <path d="M6.6 2.8 9.4 7l-2 2.1a16 16 0 0 0 7.5 7.5l2.1-2 4.2 2.8-.7 4a2 2 0 0 1-2 1.6A18.5 18.5 0 0 1 1 5.8a2 2 0 0 1 1.6-2l4-.9Z"/>
+                        </svg>
+                        <p><span>Tel :</span> <a href="tel:+33101010101">+33 101 01 01 01</a></p>
+                    </article>
+                    <article class="contact-item">
+                        <svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24">
+                            <path d="M3 4h18a2 2 0 0 1 2 2v1L12 14 1 7V6a2 2 0 0 1 2-2Zm-2 5 10.4 6.7a1.1 1.1 0 0 0 1.2 0L23 9v9a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9Z"/>
+                        </svg>
+                        <address>MindGeek<br>46, rue MindGeek<br>75000 Paris</address>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <section class="contact-map-section" aria-label="Localisation de MindGeek à Paris">
+            <div id="contact-map" role="region" aria-label="Carte interactive autour de Franklin D. Roosevelt, Paris"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <nav class="footer-navigation content-width" aria-label="Navigation de pied de page">
+            <a href="home.html">Accueil</a>
+            <a href="mutualise.html">Serveur Mutualisé</a>
+            <a href="dedie.html">Serveur Dédié</a>
+            <a href="cloud.html">Solution "Cloud"</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+            <a href="#contact-map">Se connecter</a>
+        </nav>
+    </footer>
+
+    <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <symbol id="icon-users" viewBox="0 0 24 24">
+            <path d="M16 11a3 3 0 1 0-2.8-4A4 4 0 0 1 15 10v1h1Zm-8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 2c-2.7 0-6 1.35-6 4v2h12v-2c0-2.65-3.3-4-6-4Zm8.2.1c-.4 0-.85.03-1.3.1 1.25.85 2.1 2.1 2.1 3.8v2h5v-2c0-2.55-3.1-3.9-5.8-3.9Z"/>
+        </symbol>
+        <symbol id="icon-user" viewBox="0 0 24 24">
+            <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.1 0-8 2.05-8 5v3h16v-3c0-2.95-3.9-5-8-5Z"/>
+        </symbol>
+        <symbol id="icon-cloud" viewBox="0 0 24 24">
+            <path d="M19 18H6a5 5 0 0 1-.7-9.95A7 7 0 0 1 19 9a4.5 4.5 0 0 1 0 9Z"/>
+        </symbol>
+        <symbol id="icon-envelope" viewBox="0 0 24 24">
+            <path d="M3 5h18a2 2 0 0 1 2 2v1l-11 7L1 8V7a2 2 0 0 1 2-2Zm-2 5.4 10.4 6.7a1.1 1.1 0 0 0 1.2 0L23 10.4V19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8.6Z"/>
+        </symbol>
+    </svg>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+        const contactMap = L.map("contact-map").setView([48.8698, 2.3097], 15);
+
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(contactMap);
+
+        L.marker([48.8698, 2.3097])
+            .addTo(contactMap)
+            .bindPopup("MindGeek — Paris");
+    </script>
+</body>
+</html>
