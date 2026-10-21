@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Candal&family=Open+Sans:wght@400;600;700&display=swap");
+
+:root {
+    --navy: #203f4d;
+    --pink: #f7839b;
+    --body-text: #777;
+    font-family: "Open Sans", sans-serif;
+    color: var(--body-text);
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    background: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.content-width {
+    width: 80%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.site-header {
+    min-height: 100px;
+    background: #fff;
+}
+
+.navigation {
+    display: flex;
+    width: 90%;
+    max-width: 1400px;
+    min-height: 100px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.brand {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+.brand img {
+    display: block;
+    width: 46px;
+    height: auto;
+}
+
+.navigation-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    color: var(--navy);
+    font-family: "Candal", sans-serif;
+    font-size: 0.62rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.navigation-link svg {
+    width: 15px;
+    height: 15px;
+    color: var(--pink);
+    fill: currentColor;
+}
+
+.hero {
+    display: flex;
+    min-height: 279px;
+    padding: 40px 5%;
+    align-items: center;
+    justify-content: center;
+    background: url("../img/background.jpg") center 47% / cover no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.hero h1,
+.hero p,
+h2,
+h3,
+.footer-navigation {
+    font-family: "Candal", sans-serif;
+}
+
+.hero h1 {
+    margin: 0 0 14px;
+    font-size: 3em;
+    line-height: 1.2;
+}
+
+.hero p {
+    margin: 0;
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+.search-banner {
+    display: flex;
+    min-height: 31px;
+    align-items: center;
+    background: var(--pink);
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+}
+
+.search-banner p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main-content {
+    padding-top: 30px;
+}
+
+.content-section {
+    margin: 0 0 33px;
+}
+
+.content-section h2 {
+    min-height: 44px;
+    margin: 0 0 24px;
+    padding: 12px 10px 8px;
+    border-top: 1px dotted #9da6a8;
+    border-right: 1px dotted #9da6a8;
+    border-left: 1px dotted #9da6a8;
+    color: var(--navy);
+    font-size: 1.8em;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.feature-grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 26px;
+}
+
+.feature {
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: center;
+}
+
+.feature-icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto 10px;
+    fill: var(--pink);
+}
+
+.feature h3 {
+    margin: 0 0 8px;
+    color: var(--pink);
+    font-size: 1.2em;
+    line-height: 1.35;
+}
+
+.feature p {
+    margin: 0;
+    font-size: 0.48rem;
+    line-height: 1.65;
+    text-align: left;
+}
+
+.hosting-section {
+    margin-bottom: 20px;
+}
+
+.hosting-section h2 {
+    margin-bottom: 24px;
+}
+
+.hosting-card .feature-icon {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 10px;
+}
+
+.hosting-card h3 {
+    margin-bottom: 8px;
+}
+
+.hosting-card .price {
+    margin-bottom: 7px;
+    color: var(--pink);
+    font-size: 0.62rem;
+    text-align: center;
+}
+
+.hosting-card p + p {
+    margin-top: 6px;
+}
+.plan-card{
+    border: 1px dashed var(--navy);
+    padding: 12px;
+}
+.plan-card h4{
+    color: #fff;
+    background-color: var(--navy);
+    padding: 20px;
+}
+.plan-card .price{
+    color: var(--body-text);
+    font-weight: 800;
+}
+.plan-card li {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.65;
+    text-align: left;
+}
+
+.site-footer {
+    min-height: 127px;
+    padding: 27px 0;
+    background: var(--navy);
+    color: #fff;
+}
+
+.footer-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 0.55rem;
+}
+
+.footer-navigation a {
+    text-align: center;
+}
+
+.icon-definitions {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.pink-button{
+    display: inline-block;
+    width: 100%;
+    background-color: var(--pink);
+    color: #fff;
+    transition-duration: 0.3s;
+    padding: 10px;
+}
+.pink-button:hover{
+    background-color: #fea7b8;
+    color: #203f4d;
+}
+
+@media (min-width: 1000px) {
+    .site-header,
+    .navigation {
+        min-height: 208px;
+    }
+
+    .brand img {
+        width: 94px;
+    }
+
+    .navigation-link {
+        gap: 8px;
+        font-size: 1rem;
+    }
+
+    .navigation-link svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .hero {
+        min-height: 580px;
+    }
+
+    .hero h1 {
+        margin-bottom: 35px;
+    }
+
+    .search-banner {
+        min-height: 65px;
+        font-size: 1rem;
+    }
+
+    .main-content {
+        padding-top: 60px;
+    }
+
+    .content-section {
+        margin-bottom: 68px;
+    }
+
+    .content-section h2 {
+        min-height: 88px;
+        margin-bottom: 48px;
+        padding-top: 24px;
+    }
+
+    .feature-grid {
+        gap: 52px;
+    }
+
+    .feature-icon,
+    .hosting-card .feature-icon {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 20px;
+    }
+
+    .feature h3 {
+        margin-bottom: 16px;
+    }
+
+    .feature p {
+        font-size: 0.8rem;
+    }
+
+    .hosting-section h2 {
+        margin-bottom: 48px;
+    }
+
+    .hosting-card .price {
+        margin-bottom: 14px;
+        font-size: 1rem;
+    }
+
+    .hosting-card p + p {
+        margin-top: 12px;
+    }
+
+    .site-footer {
+        min-height: 254px;
+        padding-top: 54px;
+    }
+
+    .footer-navigation {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .navigation {
+        width: 94%;
+        min-height: 84px;
+        gap: 10px;
+    }
+
+    .site-header {
+        min-height: 84px;
+    }
+
+    .brand img {
+        width: 40px;
+    }
+
+    .navigation-link {
+        white-space: normal;
+        font-size: 0.55rem;
+    }
+
+    .hero {
+        min-height: 240px;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .feature p {
+        font-size: 0.75rem;
+    }
+
+    .footer-navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px 24px;
+    }
+}
