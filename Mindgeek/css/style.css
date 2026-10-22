@@ -427,7 +427,9 @@ h3,
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
+        font-size: 1rem;
+        gap: 16px 24px;
     }
 
     .contact-section {
