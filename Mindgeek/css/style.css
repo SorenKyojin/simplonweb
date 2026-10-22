@@ -342,21 +342,20 @@ h3,
 @media (min-width: 1000px) {
     .site-header,
     .navigation {
-        min-height: 208px;
+        display: flex;
+        margin: 10px;
     }
-
-    .brand img {
-        width: 94px;
-    }
-
     .navigation-link {
         gap: 8px;
         font-size: 1rem;
     }
-
     .navigation-link svg {
         width: 28px;
         height: 28px;
+    }
+
+    .brand img {
+        width: 94px;
     }
 
     .hero {
@@ -419,12 +418,16 @@ h3,
     }
 
     .site-footer {
+        display: flex;
         min-height: 254px;
         padding-top: 54px;
     }
 
     .footer-navigation {
-        font-size: 0.9rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .contact-section {
@@ -462,9 +465,9 @@ h3,
 
 @media (max-width: 600px) {
     .navigation {
-        width: 94%;
-        min-height: 84px;
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
     }
 
     .site-header {
@@ -473,11 +476,6 @@ h3,
 
     .brand img {
         width: 40px;
-    }
-
-    .navigation-link {
-        white-space: normal;
-        font-size: 0.55rem;
     }
 
     .hero {
@@ -498,8 +496,10 @@ h3,
     }
 
     .footer-navigation {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        flex-direction: column;
         gap: 18px 24px;
     }
 
