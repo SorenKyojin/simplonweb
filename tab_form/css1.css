@@ -1,0 +1,33 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+thead{
+    background-color: #1b2d59;
+    color: #fff;
+    font-weight: 400;
+}
+td, th{
+    text-align: center;
+    border: 1px solid #6d6d6d;
+    padding: 20px;
+}
+caption{
+    text-align: left;
+    font-weight: 400;
+}
+.grey-cell{
+    background-color: #f2f4f6;
+    font-weight: 400;
+}
+.yellow-cell{
+    background-color: #fef3c7;
+}
+.green-cell{
+    background-color: #dcfce7;
+    font-weight: 400;
+}
+.lunch{
+    background-color: #fff;
+    color: #727986;
+    font-style: oblique;
+}

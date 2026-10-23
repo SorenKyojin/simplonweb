@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            /* taille mini: 600px*/
+            min-width: 600px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        thead {
+            background-color: black;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: rgba(106, 187, 77, 0.361);
+        }
+
+
+        tbody tr:nth-child(odd) {
+            background-color: rgba(7, 3, 13, 0.254);
+        }
+
+        div {
+            /*seul le tableau défile en horizontal*/
+            overflow-x: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <table>
+            <caption>Liste d'apprenants</caption>
+            <thead>
+                <tr>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                    <th>Ville</th>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                    <th>Ville</th>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                    <th>Ville</th>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                    <th>Ville</th>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                    <th>Ville</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Jean</td>
+                    <td>Pierre</td>
+                    <td>Creil</td>
+                    <td>Jean</td>
+                    <td>Pierre</td>
+                    <td>Creil</td>
+                    <td>Jean</td>
+                    <td>Pierre</td>
+                    <td>Creil</td>
+                    <td>Jean</td>
+                    <td>Pierre</td>
+                    <td>Creil</td>
+                    <td>Jean</td>
+                    <td>Pierre</td>
+                    <td>Creil</td>
+                </tr>
+                <tr>
+                    <td>Jean</td>
+                    <td>Pierre</td>
+                    <td>Creil</td>
+                    <td>Jean</td>
+                    <td>Pierre</td>
+                    <td>Creil</td>
+                    <td>Jean</td>
+                    <td>Pierre</td>
+                    <td>Creil</td>
+                    <td>Jean</td>
+                    <td>Pierre</td>
+                    <td>Creil</td>
+                    <td>Jean</td>
+                    <td>Pierre</td>
+                    <td>Creil</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
