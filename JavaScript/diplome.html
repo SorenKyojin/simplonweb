@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <script>
+        let note = parseInt(prompt("Indiquez la note à attribuer"));
+        if (note >= 16) {
+            mention = "Très Bien";
+        } else if (note >= 14) {
+            mention = "Bien";
+        } else if (note >= 12) {
+            mention = "Assez Bien";
+        } else if (note >= 10) {
+            mention = "Passable";
+        } else if (note >= 0) {
+            mention = "Ajourné";
+        } else if (note > 20) {
+            mention = "[Note invalide]"
+        } else {
+            mention = "[Note invalide]"
+        }
+        alert(note + "/20" + " Mention : " + mention);
+    </script>
+</body>
+</html>

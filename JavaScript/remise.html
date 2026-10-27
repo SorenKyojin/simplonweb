@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <script>
+        let prixInitial = parseInt(prompt("Indiquez le prix initial du produit"));
+        if (prixInitial < 2000) {
+            prixFinal = prixInitial;
+        } else if (prixInitial >= 2000) {
+            remise = prixInitial * 0.05;
+            prixFinal = prixInitial - remise;
+        } else if (prixInitial > 5000) {
+            remise = prixInitial * 0.1;
+            prixFinal = prixInitial - remise;
+        }
+        alert("Prix du produit : " + prixInitial);
+        alert("Prix avec remise : " + prixFinal);
+    </script>
+</body>
+</html>
