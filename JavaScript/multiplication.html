@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <p>
+        Demandez un nombre compris entre 3 et 9 et affichez sa table de multiplication de 1 à 10
+    </p>
+    <script>
+        let nombre;
+        do {
+            nombre = Number(prompt("Un nombre [3, 9]"));
+
+        } while (isNaN(nombre) || nombre < 3 || nombre > 9);
+
+        for (let i = 1; i <= 10; i++) {
+            alert(`${nombre} X ${i} = ${nombre * i}`);
+            window.location.replace("../exercices_js.html");
+        }
+    </script>
+</body>
+</html>

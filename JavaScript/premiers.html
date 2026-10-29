@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Nombres premiers</h1>
+    <p>
+        Un nombre premier est un entier qui a exactement deux diviseurs : 1 et lui-même. Par exemple, 7 est premier (divisible seulement par 1 et 7). 12 ne l’est pas (divisible aussi par 2, 3, 4 et 6), et 1 non plus, car il n’a qu’un seul diviseur.
+        Demandez un entier à l’utilisateur et indiquez s’il est premier.
+        Exemple:
+        7 -> 7 est premier
+        12 -> 12 n'est pas premier (divisible par 2)
+        1 -> 1 n'est pas premier
+    </p>
+    <script>
+        const nombre = Number(prompt("Entrez un nombre."));
+        let premier = Number.isInteger(nombre) && nombre >= 2;
+        let diviseur = 0;
+
+        for (let i = 2; premier && i <= Math.sqrt(nombre); i++) {
+            if (nombre % i === 0) {
+                premier = false;
+                diviseur = i;
+            }
+        }
+
+        if (premier) {
+            alert(`${nombre} est premier`);
+        } else if (diviseur) {
+            alert(`${nombre} n'est pas premier (divisible par ${diviseur})`);
+        } else {
+            alert(`${nombre} n'est pas premier`);
+        }
+        window.location.replace("../exercices_js.html");
+    </script>
+</body>
+</html>
