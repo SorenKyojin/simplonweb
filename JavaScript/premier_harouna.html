@@ -4,25 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Nombre premier</title>
 </head>
 
 <body>
-    <h1>Javascript</h1>
-
-    <p>
-        Nombre premier
-
-        Un nombre premier est un entier qui a exactement deux diviseurs : 1 et lui-même. Par exemple, 7 est premier
-        (divisible seulement par 1 et 7). 12 ne l’est pas (divisible aussi par 2, 3, 4 et 6), et 1 non plus, car il n’a
-        qu’un seul diviseur.
-        Demandez un entier à l’utilisateur et indiquez s’il est premier.
-        Résultat attendu
-        7 -> 7 est premier
-        12 -> 12 n'est pas premier (divisible par 2)
-        1 -> 1 n'est pas premier
-    </p>
-
+    <div class="box center">
+        <h1 class="title oswald">Nombre premier</h1>
+        <p class="nunito">
+            Un nombre premier est un entier qui a exactement deux diviseurs : 1 et lui-même. Par exemple, 7 est premier
+            (divisible seulement par 1 et 7). 12 ne l’est pas (divisible aussi par 2, 3, 4 et 6), et 1 non plus, car il n’a
+            qu’un seul diviseur.
+            <br>Demandez un entier à l’utilisateur et indiquez s’il est premier.
+            <br>Résultat attendu
+            <br>7 -> 7 est premier
+            <br>12 -> 12 n'est pas premier (divisible par 2)
+            <br>1 -> 1 n'est pas premier
+            <br><br>Vérifiez la console via F12 pour voir les résultats.
+        </p>
+        <a href="../exercices_js.html" class="blue-button">Retour</a>
+    </div>
     <script>
 
         // nombre à tester

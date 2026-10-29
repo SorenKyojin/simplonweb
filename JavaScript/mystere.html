@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Le nombre mystère</title>
+</head>
+
+<body>
+    <div class="box center">
+        <h1 class="title oswald">Le nombre mystère</h1>
+        <p class="nunito">
+            Un nombre entre 1 et 100 est choisi aléatoirement par le programme.<br>
+            Trouvez le nombre correspondant.<br>
+            Actualisez la page pour recommencer.
+        </p>
+        <a href="../exercices_js.html" class="blue-button">Retour</a>
+    </div>
+    <div class="box center">
+        <h2 class="oswald">Nombre d'essais: <span id="tries"></span></h2>
+        <button id="guess-button" class="blue-button">Deviner le nombre</button>
+        <h2 id="guess" class="nunito"></h2>
+    </div>
+    <script>
+
+        let tries = 0;
+        let number = 0;
+        var random = Math.floor(Math.random() * 101) +1;
+
+        document.getElementById("guess-button").addEventListener("click", function () {
+            number = window.prompt("Entrez un nombre entre 1 et 100 :");
+            tries++;
+            if (number < random) {
+                document.getElementById("guess").textContent = "C'est plus";
+            } else if (number > random){
+                document.getElementById("guess").textContent = "C'est moins";
+            } else {
+                document.getElementById("guess").textContent = "Vous avez trouvé !";
+            }
+            document.getElementById("tries").textContent = tries;
+        });
+    </script>
+</body>
+
+</html>

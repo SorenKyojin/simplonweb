@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box center">
+        <h1 class="title oswald">Javascript</h1>
+        <p class="nunito">
+            Le plus grand de 5 nombres
+            <br>Demandez successivement 5 nombres à l’utilisateur, puis affichez le plus grand.
+            <br>Résultat attendu
+            <br>Entrez le nombre numéro 1 : 12
+            <br>Entrez le nombre numéro 2 : 14
+            <br>Entrez le nombre numéro 3 : 3
+            <br>Entrez le nombre numéro 4 : 9
+            <br>Entrez le nombre numéro 5 : 6
+            <br>Le plus grand de ces nombres est : 14
+            <br>Modifiez ensuite le programme pour afficher aussi la position à laquelle ce nombre a été saisi :
+            <br>Résultat attendu
+            <br>C'était le nombre numéro 2
+            <br>Vérifiez la console en appuyant sur F12 pour voir les résultats.
+        </p>
+        <a href="../exercices_js.html" class="blue-button">Retour</a>
+    </div>
+    <script>
+
+        let nombre;
+        let pos;
+        let max = Number.MIN_SAFE_INTEGER //-Infinity;
+
+        for (let i = 1; i <= 5; i++) {
+            nombre = Number(prompt(`Entrer un nombre ${i}:`));
+            if (max < nombre) {
+                max = nombre;
+                pos = i;
+            }
+            console.log(nombre)
+        }
+
+        console.log(`Le plus grand de ces nombres est : ${max}`);
+        console.log(`C'était le nombre numéro : ${pos}`);
+
+
+    </script>
+</body>
+
+</html>

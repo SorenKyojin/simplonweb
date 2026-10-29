@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box center">
+        <h1 class="title oswald">Javascript</h1>
+        <p class="nunito">
+            Somme jusqu’à zéro
+            Calculez la somme d’une suite de nombres entiers saisis par l’utilisateur. La saisie s’arrête quand l’utilisateur tape 0. Affichez alors la somme.<br>
+            Résultat attendu<br>
+            Nombre : 5<br>
+            Nombre : 12<br>
+            Nombre : 3<br>
+            Nombre : 0<br>
+            Somme : 20<br>
+            Bonus<br>
+            Affichez aussi combien de nombres ont été saisis et leur moyenne.<br>
+            Vérifiez la console en appuyant sur F12 pour voir les résultats.
+        </p>
+        <a href="../exercices_js.html" class="blue-button">Retour</a>
+    </div>
+    <script>
+
+        let somme = 0;
+        let compteur = 0;
+        let nombre = Number(prompt("un nombre (0 pour stop)"));
+
+        while (nombre !== 0) {
+            somme = somme + nombre; // somme += nombre;
+            compteur++;
+            nombre = Number(prompt("un nombre (0 pour stop)"));
+        }
+
+        console.log("somme " + somme);
+        console.log("nombre " + compteur);
+
+        compteur ? console.log("moyenne " + somme / compteur) : console.log("Pas de moyenne ");;
+
+    </script>
+</body>
+
+</html>
