@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Javascript</h1>
+
+    <p>
+        Nombre premier
+
+        Un nombre premier est un entier qui a exactement deux diviseurs : 1 et lui-même. Par exemple, 7 est premier
+        (divisible seulement par 1 et 7). 12 ne l’est pas (divisible aussi par 2, 3, 4 et 6), et 1 non plus, car il n’a
+        qu’un seul diviseur.
+        Demandez un entier à l’utilisateur et indiquez s’il est premier.
+        Résultat attendu
+        7 -> 7 est premier
+        12 -> 12 n'est pas premier (divisible par 2)
+        1 -> 1 n'est pas premier
+    </p>
+
+    <script>
+
+        // nombre à tester
+        let nombre = Number(prompt("un nombre"));
+        // initialise un boolean à vrai
+        let isPremier = true;
+
+        // je parcours de 2 à nombre-1
+        for (let i = 2; i < nombre; i++) {
+            // teste si le reste de la division entière est égal 0. 
+            if (nombre % i == 0) {
+                // si OUI, mon boolean passe à false (faux)
+                isPremier = false;
+                // break: pour sortir de la boucle
+                break;
+            }
+        }
+
+        // si isPremier == true
+        if (isPremier) {
+            console.log(`${nombre} est premier`);
+        } else { // sinon
+            console.log(`${nombre} n'est pas premier`);
+        }
+
+    </script>
+</body>
+
+</html>
