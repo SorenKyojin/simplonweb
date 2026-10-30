@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Prix TTC</title>
+</head>
+
+<body>
+    <div class="box center">
+        <h1 class="title oswald">Prix TTC</h1>
+        <p class="nunito">
+            Un nombre entre 1 et 100 est choisi aléatoirement par le programme.<br>
+            Trouvez le nombre correspondant.<br>
+            Actualisez la page pour recommencer.
+        </p>
+        <a href="../exercices_js.html" class="blue-button">Retour</a>
+    </div>
+    <div class="box center">
+        <h2 class="oswald">Veuillez entre le prix Hors Taxe</h2>
+        <input type="number" name="price" id="price">
+        <button id="calculate" class="green-button">Calculer le prix TTC</button>
+    </div>
+    <div class="box center">
+        <p class="nunito">Prix Hors Taxe: <span id="initial-price"></span>€</p>
+        <p class="nunito">Prix TTC: <span id="final-price"></span>€</p>
+    </div>
+    <script>
+
+        let initialPrice = 0;
+        let finalPrice = 0;
+        function calculerTTC() {
+            initialPrice = Number(document.getElementById("price").value);
+            finalPrice = initialPrice * 1.2;
+        }
+
+        document.getElementById("calculate").addEventListener("click", function () {
+            calculerTTC();
+            document.getElementById("initial-price").textContent = initialPrice.toFixed(2);
+            document.getElementById("final-price").textContent = finalPrice.toFixed(2);
+        });
+    </script>
+</body>
+
+</html>
