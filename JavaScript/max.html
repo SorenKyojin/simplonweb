@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Fonction Max</title>
+</head>
+
+<body>
+    <div class="box center">
+        <h1 class="title oswald">Fonction Max</h1>
+        <p class="nunito">
+            Écrivez la fonction max3(a, b, c) qui renvoie le plus grand des trois nombres, sans utiliser Math.max().
+            <br>Exemple:
+            <br>max3(4, 9, 2) -> 9
+            <br>max3(-1, -5, -3) -> -1
+        </p>
+        <a href="../exercices_js.html" class="blue-button">Retour</a>
+    </div>
+    <script>
+        function max3(
+            a = Math.floor(Math.random() * 101),
+            b = Math.floor(Math.random() * 101),
+            c = Math.floor(Math.random() * 101)
+        ) {
+            let maximum = a;
+
+            if (b > maximum) {
+                maximum = b;
+            }
+            if (c > maximum) {
+                maximum = c;
+            }
+
+            return maximum;
+        }
+        console.log("Nombre le plus haut: " + max3());
+    </script>
+</body>
+
+</html>

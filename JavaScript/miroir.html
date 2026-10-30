@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Miroir</title>
+</head>
+
+<body>
+    <div class="box center">
+        <h1 class="title oswald">Miroir</h1>
+        <p class="nunito">
+            La fonction mirror(text) reçoit une chaîne de caractères et la renvoie inversée.<br>
+            mirror("test") -> "tset"<br>
+            mirror("Simplon") -> "nolpmiS"<br>
+            Note: Les méthodes split(), reverse() et join() sont interdites : parcourez la chaîne avec une boucle.
+        </p>
+        <a href="../exercices_js.html" class="blue-button">Retour</a>
+    </div>
+    <div class="box center">
+        <h2 class="oswald">Effet Miroir</h2>
+        <input type="text" name="text" id="text">
+        <button id="mirror" class="green-button">Miroir !</button>
+    </div>
+    <div class="box center">
+        <p class="nunito" id="initial-text"></p>
+        <p class="nunito" id="mirrored-text"></p>
+    </div>
+    <audio src="../audio/mirror.mp3" style="visibility: hidden;"></audio>
+    <script>
+        function mirror(text) {
+            let textInvert = "";
+
+            for (let i = text.length - 1; i >= 0; i--) {
+                textInvert += text[i];
+            }
+
+            document.getElementById("initial-text").textContent = text;
+            document.getElementById("mirrored-text").textContent = textInvert;
+        }
+
+        document.getElementById("mirror").addEventListener("click", function () {
+            const audio = document.querySelector("audio");
+            audio.volume = 0.8;
+            audio.currentTime = 0;
+            audio.play();
+            mirror(document.getElementById("text").value);
+        });
+    </script>
+</body>
+
+</html>
