@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Liste de courses</title>
+</head>
+
+<body>
+    <div class="box center">
+        <h1 class="title oswald">Liste de courses</h1>
+        <p class="nunito">
+            1. Ajoutez « tomates » à la fin du tableau et « café » au début puis afficher le tableau.
+            <br>2. Affichez le nombre d’articles, le premier et le dernier article.
+            <br>3. Retirez le dernier article, puis afficher le tableau.
+            <br>4. Ajouter chocolat avant lait, puis afficher le tableau.
+            <br>5. Retirer lait, puis afficher le tableau.
+            <br>Affichez la console avec F12 pour voir le résultat.
+        </p>
+        <a href="../exercices_js.html" class="blue-button">Retour</a>
+    </div>
+    <script>
+        const courses = ["pain", "lait", "riz"];
+        console.log(courses);
+        
+        courses.push("tomates"); // Ajoute "tomates" à la fin du tableau
+        console.log(courses);
+
+        courses.unshift("café"); // Ajoute "café" au début du tableau
+        console.log(courses);
+
+        console.log("Nombre d'articles: " + courses.length);
+        console.log("Premier article: " + courses[0]);
+        console.log("Dernier article: " + courses[courses.length - 1]);
+
+        courses.pop(); // Retire le dernier article
+        console.log(courses);
+
+        const laitIndex = courses.indexOf("lait"); // Trouve l'index de "lait"
+        if (laitIndex !== -1) {
+            courses.splice(laitIndex, 0, "chocolat"); // Ajoute "chocolat" avant "lait"
+        }
+        console.log(courses);
+
+        const laitIndex2 = courses.indexOf("lait");
+        if (laitIndex2 !== -1) {
+            courses.splice(laitIndex2, 1); // Retire "lait"
+        }
+        console.log(courses);
+    </script>
+</body>
+
+</html>
