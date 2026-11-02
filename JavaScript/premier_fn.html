@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Javascript</title>
+</head>
+<body>
+    <div class="box center">
+        <h1 class="title oswald">Nombres premiers</h1>
+        <p class="nunito">
+            Comme le programme "Nombre Premier" mais en l'intégrant dans une fonction.
+            <br>Toutes les 5 secondes, la page sélectionne un chiffre aléatoire et en déduits s'il est premier.
+        </p>
+        <a href="../exercices_js.html" class="blue-button">Retour</a>
+    </div>
+    <div class="box center">
+        <h2 id="result" class="nunito"></h2>
+    </div>
+    <script>
+        function estPremier(nombre) {
+            let premier = Number.isInteger(nombre) && nombre >= 2;
+            let diviseur = 0;
+            for (let i = 2; premier && i <= Math.sqrt(nombre); i++) {
+                if (nombre % i === 0) {
+                    premier = false;
+                    diviseur = i;
+                }
+            }
+
+            if (premier) {
+                document.getElementById("result").textContent = nombre + " est premier.";
+            } else if (diviseur) {
+                document.getElementById("result").textContent = nombre + " n'est pas premier. (Divisible par "+ diviseur +")";
+            } else {
+                document.getElementById("result").textContent = nombre + " n'est pas premier.";
+            }
+        }
+        estPremier(Math.floor(Math.random()*101))
+        setInterval(() => estPremier(Math.floor(Math.random()*101)), 5000);
+        
+    </script>
+</body>
+</html>
