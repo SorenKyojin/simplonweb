@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>La calculatrice</title>
+</head>
+
+<body>
+    <div class="box center">
+        <h1 class="title oswald">La calculatrice</h1>
+        <p class="nunito">
+            Écrivez la fonction calculer(a, operateur, b), qui reçoit deux nombres et un opérateur ("+", "-", "*" ou "/") et renvoie le résultat de l’opération.
+            <br>Si l’opérateur est inconnu, ou si on divise par 0, la fonction renvoie null.
+            <br>calculer(8, "+", 2)  -> 10
+            <br>calculer(8, "/", 2)  -> 4
+            <br>calculer(8, "/", 0)  -> null
+            <br>calculer(8, "%", 2)  -> null
+            <br>Ouvrez la console avec F12 pour voir le résultat.
+        </p>
+        <a href="../exercices_js.html" class="blue-button">Retour</a>
+    </div>
+    <script>
+        function calculer(a, operateur, b) {
+            switch (operateur) {
+                case "+":
+                    return a + b;
+                case "-":
+                    return a - b;
+                case "*":
+                    return a * b;
+                case "/":
+                    if (b !== 0) {
+                        return a / b;
+                    } else {
+                        return "Erreur: Division par zéro (Résultat: null)";
+                    }
+                default:
+                    return "Erreur: Opérateur invalide (Résultat: null)";
+            }
+        }
+
+        // Exemple d'utilisation
+        console.log(calculer(8, "+", 2)); // 10
+        console.log(calculer(8, "/", 2)); // 4
+        console.error(calculer(8, "/", 0)); // Erreur: Division par zéro
+        console.error(calculer(8, "%", 2)); // Erreur: Opérateur invalide
+    </script>
+</body>
+
+</html>
