@@ -162,8 +162,11 @@ body {
     height: auto;
     border-radius: 10px;
 }
-
 #combo {
+    transition-duration: 0.30s;
+}
+
+.combo {
     color: #fdbf04;
     text-shadow: 0px 0px 10px #fdbf04;
 }

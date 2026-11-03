@@ -1,6 +1,6 @@
 let playerWinStreak = 0;
 let interruptionTimeout;
-const comboClasses = ["combo-5", "combo-10", "combo-15", "combo-20"];
+const comboClasses = ["combo-5", "combo-10", "combo-15", "combo-20", "interrupted"];
 
 document.addEventListener("click", (event) => {
 	const button = event.target.closest("button");
@@ -62,16 +62,22 @@ document.addEventListener("click", (event) => {
 			}
 		}
 	} else if (computerWins) {
+		const comboWasInProgress = playerWinStreak >= 2;
 		playerWinStreak = 0;
 		clearTimeout(interruptionTimeout);
 		if (combo) {
 			combo.classList.remove(...comboClasses);
-			combo.textContent = "Interruption !";
-			combo.classList.add("interrupted");
-			interruptionTimeout = setTimeout(() => {
+			if (comboWasInProgress) {
+                combo.classList.add("interrupted");
+				combo.textContent = "Interruption !";
+				interruptionTimeout = setTimeout(() => {
+					combo.textContent = "";
+					combo.classList.remove("interrupted");
+				}, 2500);
+			} else {
 				combo.textContent = "";
 				combo.classList.remove("interrupted");
-			}, 1500);
+			}
 		}
 	} else {
 		playerWinStreak = 0;
