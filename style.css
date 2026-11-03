@@ -110,6 +110,10 @@ body {
     align-items: center;
     gap: 20px;
 }
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
 .flex{
     display: flex;
 }
@@ -139,8 +143,13 @@ body {
     gap: 20px;
     
 }
-
-
+.spc-4 {
+    /* Reduce space around p */
+    padding: 4px;
+}
+.center-txt {
+    text-align: center;
+}
 
 #title-ia-image {
     max-width: 500px;
@@ -154,3 +163,27 @@ body {
     border-radius: 10px;
 }
 
+#combo {
+    color: #fdbf04;
+    text-shadow: 0px 0px 10px #fdbf04;
+}
+.combo-5 {
+    color: #6ff14e;
+    text-shadow: 0px 0px 10px #6ff14e;
+}
+.combo-10 {
+    color: #4ef1c3;
+    text-shadow: 0px 0px 10px #4ef1c3;
+}
+.combo-15 {
+    color: #03f7ff;
+    text-shadow: 0px 0px 10px #03f7ff;
+}
+.combo-20 {
+    color: #ff0000;
+    text-shadow: 0px 0px 10px #ff0000;
+}
+.interrupted {
+    color: #ff0000;
+    text-shadow: 0px 0px 10px #ff0000;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Échanger deux valeurs</title>
+</head>
+
+<body>
+    <div class="box center">
+        <h1 class="title oswald">Échanger deux valeurs</h1>
+        <p class="nunito">
+            Avec le même tableau tab, demandez deux indices et échangez les valeurs placées à ces deux indices.
+            <br>Si un indice n’existe pas dans le tableau, affichez un message d’erreur.
+            <br>Exemple:
+            <br>Indices : 0 et 3
+            <br>Avant : [12, 15, 13, 10, 8, 9, 13, 14]
+            <br>Après : [10, 15, 13, 12, 8, 9, 13, 14]
+            <br>Ouvrez la console avec F12 pour voir le résultat.
+        </p>
+        <a href="../exercices_js.html" class="blue-button">Retour</a>
+    </div>
+    <script>
+        const tab = [12, 15, 13, 10, 8, 9, 13, 14];
+        const index1 = parseInt(prompt("Entrez le premier indice à échanger :"));
+        const index2 = parseInt(prompt("Entrez le deuxième indice à échanger :"));
+        console.log("Tableau avant l'échange :", tab);
+
+        if (index1 >= 0 && index1 < tab.length && index2 >= 0 && index2 < tab.length) {
+            const temp = tab[index1];
+            tab[index1] = tab[index2];
+            tab[index2] = temp;
+            console.log("Tableau après l'échange :", tab);
+        } else {
+            console.error("L'un des indices n'existe pas dans le tableau.");
+        }
+    </script>
+</body>
+
+</html>

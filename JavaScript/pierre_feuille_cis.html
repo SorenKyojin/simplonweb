@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Pierre, Feuille, Ciseaux</title>
+</head>
+<body>
+    <header class="box flex-between">
+        <h1 class="oswald">Pierre Feuille Ciseaux</h1>
+        <nav>
+            <ul class="nav-list flex flex-row flex-center">
+                <li><a href="index.html" class="blue-button nav-button">Accueil</a></li>
+                <li><a href="exercices.html" class="blue-button nav-button">Maquettes</a></li>
+                <li><a href="../exercices_js.html" class="green-button nav-button">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box center">
+        <p class="nunito">Sélectionnez Pierre, feuille ou ciseau, et tentez de battre l'ordinateur en duel !</p>
+        <p class="nunito">La pierre est plus forte que le ciseau, mais plus faible que la feuille.</p>
+        <p class="nunito">Le ciseau est plus fort que la feuille, mais plus faible que la pierre.</p>
+    </div>
+    <div class="box center flex-row txt-center">
+        <button id="pierre" class="blue-button flex-column">
+            <img src="img/pierre.png" alt="">
+            Pierre
+        </button>
+        <button id="feuille" class="blue-button flex-column">
+            <img src="img/feuille.png" alt="">
+            Feuille
+        </button>
+        <button id="ciseau" class="blue-button flex-column">
+            <img src="img/ciseau.png" alt="">
+            Ciseau
+        </button>
+    </div>
+    <div class="box flex-container flex-row">
+        <h1 class="title oswald txt-center" id="combo"></h1>
+        <div class="flex flex-center flex-column">
+            <img src="#" alt="" id="player-choice" class="player-choice">
+            <span id="player-choice-name" class="nunito center-txt"></span>
+            <span class="oswald center-txt">Vous</span>
+            <span id="player-score" class="oswald center-txt">Score: <span id="player-score-value">0</span></span>
+        </div>
+        <h1 class="title oswald">VS</h1>
+        <div class="flex flex-center flex-column">
+            <img src="#" alt="" id="computer-choice" class="computer-choice">
+            <span id="computer-choice-name" class="nunito center-txt"></span>
+            <span class="oswald center-txt">Ordinateur</span>
+            <span id="computer-score" class="oswald center-txt">Score: <span id="computer-score-value">0</span></span>
+        </div>
+    </div>
+    <script src="js/pierre_feuille_cis.js"></script>
+</body>
+</html>
