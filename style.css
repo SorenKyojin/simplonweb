@@ -68,6 +68,25 @@ body {
     background-color: #53abfd;
     color: #1d1d1d;
 }
+.yellow-button {
+    background-color: #ffc107;
+    font-family: 'Nunito', sans-serif;
+    color: #1d1d1d;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.30s;
+}
+.yellow-button:hover {
+    background-color: #ffdf7e;
+    color: #1d1d1d;
+}
 .green-button {
     background-color: #28a745;
     font-family: 'Nunito', sans-serif;
